@@ -1,0 +1,74 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D2D2D;
+    color: white;
+    width: auto;
+    height: 380px;
+    align-items: flex-start;
+}
+
+.municipality-title {
+    font-size: 5rem;
+    margin: 1rem;
+    font-family: impact;
+}
+
+.navbar-links {
+    width: 50%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 2.5rem;
+    font-size: 2.5rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar-links ul li {
+    text-align: center;
+}
+
+
+.navbar-links.active {
+    display: flex;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+#slogan{
+    font-family:'Brush Script MT';
+    font-size: 80px;
+    color: aqua;
+    position:absolute;
+    margin-top: 3em;
+}
