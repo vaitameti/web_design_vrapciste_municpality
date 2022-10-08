@@ -1,74 +1,225 @@
-
 body {
     margin: 0;
     padding: 0;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2D2D2D;
+    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
     color: white;
     width: auto;
     height: 380px;
     align-items: flex-start;
-}
-
-.municipality-title {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  
+  .municipality-title {
     font-size: 5rem;
     margin: 1rem;
     font-family: impact;
-}
-
-.navbar-links {
+  }
+  
+  .navbar-links {
     width: 50%;
-}
-
-.navbar-links ul {
+  }
+  
+  .navbar-links ul {
     display: flex;
     margin: 0;
     padding: 0;
-}
-
-.navbar-links li {
+  }
+  
+  .navbar-links li {
     list-style: none;
-}
-
-.navbar-links li a {
+  }
+  
+  .navbar-links li a {
     display: block;
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
     padding: 2.5rem;
     font-size: 2.5rem;
-}
-
-.navbar-links li:hover {
+  }
+  
+  .navbar-links li:hover {
     background-color: #555;
-}
-
-.navbar-links ul {
+  }
+  
+  .navbar-links ul {
     width: 100%;
     flex-direction: column;
-}
-
-.navbar-links ul li {
+  }
+  
+  .navbar-links ul li {
     text-align: center;
-}
-
-
-.navbar-links.active {
+  }
+  
+  
+  .navbar-links.active {
     display: flex;
-}
-
-.navbar-links {
+  }
+  
+  .navbar-links {
     height: 100%;
-}
-
-#slogan{
-    font-family:'Brush Script MT';
+  }
+  
+  #slogan {
+    font-family: 'Brush Script MT';
     font-size: 80px;
     color: aqua;
-    position:absolute;
+    position: absolute;
     margin-top: 3em;
-}
+  }
+  
+  .news {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 18em;
+    padding: 5px;
+    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
+    border-radius: 25px;
+  }
+  
+  .one-news {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    background: #441F1F;
+    margin-bottom: 50px;
+  }
+  
+  .news>h1 {
+    color: aliceblue;
+    font-size: 450%;
+  }
+  
+  
+  .one-news>h2,
+  p {
+    margin: 4px;
+    font-size: 400%;
+    color: aliceblue;
+  }
+  
+  .one-news>li,
+  a {
+    text-decoration: underline;
+    list-style: none;
+    font-size: 2em;
+    color: grey;
+  }
+  
+  .search {
+    width: 50%;
+    height: 50px;
+    border-width: 10px;
+    border-radius: 25px;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 30px;
+    box-shadow: 10px 10px;
+  }
+  
+  #vrapcistePP {
+    margin-top: 60px;
+    border-radius: 50px;
+  }
+  
+  .paragraph {
+    color: black;
+    margin-top: 190px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+    font-size: 35px;
+    font-weight: bold;
+    border: 5px solid black;
+    border-radius: 25px;
+    border-style: outset;
+  }
+  
+  /* Footer */
+  .footer {
+    width: 100%;
+    background-color: #441f1f;
+    color: white;
+    text-align: center;
+    list-style: none;
+    font-size: 10px;
+    margin-top: 7em;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .socialMediaicons {
+    font-size: 45px;
+    padding-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .socialMediaicons>#instagram,
+  #facebook {
+    margin-right: 50px;
+  }
+  
+  .socialMediaicons>#instagram:hover {
+    color: orangered;
+  }
+  
+  .socialMediaicons>#facebook:hover {
+    color: blue;
+  }
+  
+  .socialMediaicons>#twitter:hover {
+    color: lightblue;
+  }
+  
+  #footerLinks {
+    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
+    display: flex;
+    border-radius: 25px;
+  }
+  
+  .list_footer {
+    font-size: large;
+    text-align: center;
+  }
+  
+  .footer li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer li{
+    list-style:none;
+    padding: 50px;
+  }
+  
+  .footer li:hover{
+    background-color: #555;
+  }
+  
+  #leftLinks{
+    display: block;
+    width: 50%;
+    font-size: 20px;
+    text-align: left;
+    border-color: aliceblue;
+  }
+  
+  #rightLinks{
+    display: block;
+    width: 50%;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .copyright{
+    display: inline-block;
+  }
