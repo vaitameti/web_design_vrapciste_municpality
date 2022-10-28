@@ -1,5 +1,124 @@
-<h1>news will go here</h1>
-<h1>news will go here</h1>
-<h1>news will go here</h1>
-<h1>news will go here</h1>
-<h1>news will go here</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>News</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="municipality-title">Vrapciste <br>municpality</div>
+        <p id="slogan">NEWS</p>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="newsSection">
+        <div class="newsFeed">
+            <p class="newsHeader">Public transport fee</p>
+            <p class="newsParagraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi scelerisque luctus
+                velit. Praesent dapibus.
+                Vestibulum fermentum tortor id mi. In rutrum. Nullam at arcu a est sollicitudin euismod. Duis bibendum,
+                lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. In rutrum.
+                Integer imperdiet lectus quis justo.
+                Integer malesuada. Morbi imperdiet, mauris ac auctor dictum,
+                nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Integer in sapien.
+            </p>
+            <q class="feedAuthor">Author: Vait Ameti</q>
+        </div>
+        <div class="newsFeed">
+            <p class="newsHeader">New Elections</p>
+            <p class="newsParagraph">Aliquam in lorem sit amet leo accumsan lacinia. Duis pulvinar. 
+                Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Mauris elementum mauris vitae tortor. 
+                Etiam posuere lacus quis dolor. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Aliquam in lorem sit amet leo accumsan lacinia. Duis pulvinar. 
+                Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Mauris elementum mauris vitae tortor. 
+            </p>
+            <q class="feedAuthor">Author: Orhan Fatih Dos</q>
+        </div>
+        <div class="newsFeed">
+            <p class="newsHeader">Photo exhibition</p>
+            <p class="newsParagraph">Fusce consectetuer risus a nunc. Nam quis nulla. Class aptent taciti sociosqu ad litora 
+                torquent per conubia nostra, per inceptos hymenaeos. Vivamus luctus egestas leo. Nullam rhoncus aliquam metus. Phasellus rhoncus. 
+                Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. 
+                Etiam posuere lacus quis dolor. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <q class="feedAuthor">Author: Murad Nassar</q>
+        </div>
+        <a class="before" onclick="changeFeed(-1)"> &#60; </a>
+        <a class="after" onclick="changeFeed(1)"> &#62; </a>
+    </div>
+    <div class="showSlidePage">
+        <span class="slidePage" onclick="feed(1)"></span>
+        <span class="slidePage" onclick="feed(2)"></span>
+        <span class="slidePage" onclick="feed(3)"></span>
+    </div>
+
+    <script>
+        var pageNumber = 1;
+        newsFeed(pageNumber);
+        function changeFeed(n) {
+            newsFeed(pageNumber += n);
+        }
+        function feed(n) {
+            newsFeed(pageNumber = n);
+        }
+        function newsFeed(n) {
+            var i;
+            var slides = document.getElementsByClassName("newsFeed");
+            var pages = document.getElementsByClassName("slidePage");
+            if (n > slides.length) {
+                pageNumber = 1
+            }
+            if (n < 1) {
+                pageNumber = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < pages.length; i++) {
+                pages[i].className = pages[i].className.replace(" page", "");
+            }
+            slides[pageNumber - 1].style.display = "block";
+            pages[pageNumber - 1].className += " page";
+        }
+    </script>
+
+    <footer class="footer">
+        <div id="footerLinks">
+            <ul id="leftFooterLinks">
+                <li><a href="mayor.html">> Mayor</a></li>
+                <li><a href="listOfServices.html">> List of services</a></li>
+                <li><a href="institute.html">> Institute</a></li>
+            </ul>
+            <ul id="rightFooterLinks">
+                <li><a href="news.html">> News</a></li>
+                <li><a href="contact.html">> Contact</a></li>
+                <li><a href="complaints.html">> Complaints</a></li>
+            </ul>
+        </div>
+        <br>
+        <p>Jasin AMETI</p>
+        <p>mayor of Vrapciste</p>
+        <div class="socialMediaicons">
+            <i class="fa fa-facebook" id="facebook"></i>
+            <i class="fa fa-instagram" id="instagram"></i>
+            <i class="fa fa-twitter" id="twitter"></i>
+        </div>
+        <div class="copyright">
+            <p>Vrapciste Municipality-2022 © </p>
+            <p>Designed by:Vait-Orhan-Murad</p>
+        </div>
+    </footer>
+</body>
+
+</html>
