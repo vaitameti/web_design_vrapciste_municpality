@@ -208,6 +208,7 @@ body {
     padding: 50px;
     border-style: solid;
     border-color: aliceblue;
+    border-radius: 25px;
   }
   
   .footer li:hover{
@@ -313,4 +314,30 @@ body {
 
 .feedAuthor{
   color: rgb(113, 238, 255);
+}
+
+/*Mayor section*/
+
+.card {
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-style: double;
+  border-color: black;
+  box-shadow: 5px 10px;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#MayorName{
+ color: rgb(2, 1, 1);
+ font-size: 5em;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
