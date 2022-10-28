@@ -341,3 +341,24 @@ body {
  font-size: 5em;
  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.form{
+  padding: 17 em;
+  text-align: center;
+  line-height: 100px;
+}
+
+.formInside{
+    font-size: 40px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 2em;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+  .form>p{
+    font-size: 80px;
+    text-align: center;
+    color: black;
+  }
