@@ -304,16 +304,7 @@ body {
 .newsHeader {
   color: rgb(113, 238, 255);
   text-decoration: underline;
-  padding-bottom: 5%;
-}
-
-.newsParagraph{
-  color: rgb(245, 245, 248);
-  text-align: justify;
-}
-
-.feedAuthor{
-  color: rgb(113, 238, 255);
+  font-size: 1em;
 }
 
 /*Mayor section*/
@@ -336,14 +327,14 @@ body {
   text-align: center;
 }
 
-#MayorName{
+.CardName{
  color: rgb(2, 1, 1);
  font-size: 5em;
  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .form{
-  padding: 17 em;
+  padding: 0em;
   text-align: center;
   line-height: 100px;
 }
@@ -364,7 +355,7 @@ body {
   }
 
   /*contacts*/
-  .contactus>p {
+  .contactus>h1 {
   color: black;
   font-size: 70px;
   text-align: center;
@@ -379,7 +370,7 @@ body {
 }
 
 .contactus ul p {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 45px;
   font-weight: bold;
 }
@@ -399,7 +390,54 @@ body {
 
 #map_branches{
   border-style: double;
-  border-color: black;
+  border-color: rgb(0, 0, 0);
   border-width: 10px;
   width: 98%;
+}
+
+/*newsDetail*/
+.detailNewsHeader{
+  text-align: center;
+  margin-top: 5%;
+  text-decoration: underline;
+}
+
+.detailNewsParagraph{
+    color: black;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+    font-size: 35px;
+    font-weight: bold;
+    border: 5px solid rgba(0, 0, 0, 0.075);
+    border-radius: 25px;
+    border-style: outset;
+    background-color: cyan;
+}
+
+.cardDescription{
+  color: rgb(0, 0, 0);
+}
+
+figure{
+  margin-top: 6%;
+  border-style: dashed;
+  border-width: 5px;
+  text-align: center;
+}
+
+figcaption{
+  font-weight: bolder;
+
+}
+
+.CardDescriptionName{
+  color: rgb(50, 15, 148);
+  font-size: 99px;
+}
+
+.newsSpan{
+  color: white; 
+  font-size: 40px;
 }
