@@ -362,3 +362,44 @@ body {
     text-align: center;
     color: black;
   }
+
+  /*contacts*/
+  .contactus>p {
+  color: black;
+  font-size: 70px;
+  text-align: center;
+  line-height:80px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.south_branch{
+  font-size: 40px;
+  line-height: 65px;
+}
+
+.contactus ul p {
+  color: black;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.north_branch{
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.map_of_branches p {
+  color: black;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+#map_branches{
+  border-style: double;
+  border-color: black;
+  border-width: 10px;
+  width: 98%;
+}
