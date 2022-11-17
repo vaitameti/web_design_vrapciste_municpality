@@ -1,5 +1,129 @@
-<h1>About will go here</h1>
-<h1>About will go here</h1>
-<h1>About will go here</h1>
-<h1>About will go here</h1>
-<h1>About will go here</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <title>About</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="municipality-title">Vrapciste <br>municpality</div>
+    <p id="slogan">About</p>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <form action="Search.html">
+    <input class="search" type="text" placeholder="Search..">
+    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+  </form>
+
+  <div class="aboutGallery">
+    <div class="newsFeed"> 
+         <img  src="/assets/VrCity2.jpg" alt="public transport fees" width="800" height="800" >
+    </div>
+    <div class="newsFeed"> 
+        <img  src="/assets/vrapciste.jpg" alt="public transport fees" width="800" height="800">
+   </div>
+   <div class="newsFeed"> 
+    <img  src="/assets/vrCity3.jpg" alt="public transport fees" width="800" height="800">
+</div>
+    <a class="before" onclick="changeFeed(-1)"> &#60; </a>
+    <a class="after" onclick="changeFeed(1)"> &#62; </a>
+</div>
+<div class="showSlidePage">
+    <span class="slidePage" onclick="feed(1)"></span>
+    <span class="slidePage" onclick="feed(2)"></span>
+    <span class="slidePage" onclick="feed(3)"></span>
+</div>
+
+<script>
+    var pageNumber = 1;
+    newsFeed(pageNumber);
+    function changeFeed(n) {
+        newsFeed(pageNumber += n);
+    }
+    function feed(n) {
+        newsFeed(pageNumber = n);
+    }
+    function newsFeed(n) {
+        var i;
+        var slides = document.getElementsByClassName("newsFeed");
+        var pages = document.getElementsByClassName("slidePage");
+        if (n > slides.length) {
+            pageNumber = 1
+        }
+        if (n < 1) {
+            pageNumber = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < pages.length; i++) {
+            pages[i].className = pages[i].className.replace(" page", "");
+        }
+        slides[pageNumber - 1].style.display = "block";
+        pages[pageNumber - 1].className += " page";
+    }
+</script>
+  
+  <article class="AboutArticle">
+    <br>
+    <h2>History</h2>
+    <article class="AboutParagraph">
+      <h3 class="articleHeading">200 BC</h3>
+      <p>During 200 BC Vrapciste was under the control of Macedonian Kingdom and was mainly spoken todays Greek.</p>
+    </article>
+    <article class="AboutParagraph">
+      <h3 class="articleHeading">700-1500</h3>
+      <p>During the period of 700-1500 the Slavs has came to the balkans and the people of vrapciste has adopted the culture of slavs</p>
+    </article>
+    <article class="AboutParagraph">
+      <h3 class="articleHeading">1500-1900</h3>
+      <p>For almost 400 years the ottomans has been ruler of the balkans and the people of vrapciste during these period has adopted turkish as their mother tounge.</p>
+    </article>
+    <h2>Information</h2>
+    <article class="AboutParagraph">
+        <h3 class="articleHeading">Todays figures</h3>
+        <p>Vrapciste today is the most populous suburb in Macedonia and consists of three ethnicities which all live in peace. There are around ten
+            thousand people living in the village.Thanks to Vrapciste municpality we have have been able to provide 10 thousand people their needs in transportation and basic utilities.
+        </p>
+      </article>
+    <br>
+  </article>
+
+  <footer class="footer">
+    <div id="footerLinks">
+      <ul id="leftFooterLinks">
+        <li><a href="Workers/mayor.html">> Mayor</a></li>
+        <li><a href="about.html">> About</a></li>
+        <li><a href="Employees.html">> Employees</a></li>
+      </ul>
+      <ul id="rightFooterLinks">
+        <li><a href="news.html">> News</a></li>
+        <li><a href="contact.html">> Contact</a></li>
+        <li><a href="complaints.html">> Complaints</a></li>
+      </ul>
+    </div>
+    <br>
+    <p>Jasin AMETI</p>
+    <p>mayor of Vrapciste</p>
+    <div class="socialMediaicons">
+      <i class="fa fa-facebook" id="facebook"></i>
+      <i class="fa fa-instagram" id="instagram"></i>
+      <i class="fa fa-twitter" id="twitter"></i>
+    </div>
+    <div class="copyright">
+      <p>Vrapciste Municipality-2022 © </p>
+      <p>Designed by:Vait-Orhan-Murad</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -11,7 +11,7 @@ body {
     background-image: url(/assets/Black-Brick-Wallpapers.jpg);
     color: white;
     width: auto;
-    height: 380px;
+    height: 500px;
     align-items: flex-start;
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -37,7 +37,6 @@ body {
     list-style: none;
     border-style: solid;
     border-color: aliceblue;
-    border-bottom: none;
     border-radius: 25px;
   }
   
@@ -81,54 +80,41 @@ body {
 
   /*Index page*/
   
-  .news {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 10em;
-    padding: 5px;
-    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
-    border-radius: 25px;
-  }
-  
-  .one-news {
-    margin: 10px;
-    padding: 15px;
-    border-radius: 20px;
-    background: #441F1F;
-    margin-bottom: 50px;
-  }
-  
-  .news>h2 {
-    color: aliceblue;
-    font-size: 450%;
-  }
-  
-  
-  .one-news>h2,
   p {
     margin: 4px;
     font-size: 400%;
     color: aliceblue;
-  }
+  } 
   
-  .one-news>li,
   a {
     text-decoration: underline;
     list-style: none;
     font-size: 2em;
     color: grey;
-  }
+  } 
   
   .search {
-    width: 50%;
-    height: 50px;
-    border-width: 10px;
+    width: 70%;
+    height: 100px;
+    border-width: 3px;
     border-radius: 25px;
     font-size: 3em;
     text-align: center;
-    margin-left: 250px;
-    margin-top: 30px;
-    box-shadow: 10px 10px;
+    margin-left: 100px;
+    margin-top: -80px;
+  }
+
+  .searchButton{
+    margin-top: -80px;
+    width: 120px;
+    height: 100px;
+    font-size: 40px;
+    border-radius: 10px;
+    background-color: #FFFF;
+  }
+
+  .searchButton > a{
+    color: rgb(0, 0, 0);
   }
   
   #vrapcistePP {
@@ -145,7 +131,7 @@ body {
     text-align: justify;
     font-size: 35px;
     font-weight: bold;
-    border: 5px solid black;
+    border: 5px solid rgba(0, 0, 0, 0.329);
     border-radius: 25px;
     border-style: outset;
   }
@@ -441,3 +427,61 @@ figcaption{
   color: white; 
   font-size: 40px;
 }
+
+/*Search container*/
+
+.searchContainer{
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.searchContainer > a{
+  color: rgb(50, 15, 148);;
+  font-size: 90px;
+}
+
+.searchContainer > p{
+  color: rgb(0, 0, 0);
+  margin-left: 25px;
+  font-size: 70px;
+}
+
+/*About*/
+
+.AboutArticle{
+  background-color: #441F1F;
+  margin-top: 10%;
+}
+
+.AboutArticle > h2{
+  text-decoration: underline;
+  color: rgb(128, 128, 255);
+}
+
+.articleHeading{
+  color: rgb(128, 128, 255);
+}
+
+
+.AboutParagraph{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4%;
+}
+
+.AboutParagraph > p {
+  background-color: black;
+  padding: 4%;
+  border-style: double;
+  border-radius: 25px;
+  border-color: rgb(128, 128, 255);
+  font-size: 400%;
+  color: aliceblue;
+}
+
+.aboutGallery{
+  background-color: #000000;
+  margin-top: 4%;
+}
+
+
