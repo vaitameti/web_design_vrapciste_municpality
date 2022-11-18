@@ -1,34 +1,27 @@
-body {
+  body {
     margin: 0;
     padding: 0;
   }
   
   /*Navbar*/
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     background-image: url(/assets/Black-Brick-Wallpapers.jpg);
     color: white;
-    width: auto;
-    height: 500px;
-    align-items: flex-start;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    height: 100%;
   }
   
   .municipality-title {
-    font-size: 5rem;
-    margin: 1rem;
+    font-size: 3rem;
     font-family: impact;
+    text-align: center;
   }
   
   .navbar-links {
-    width: 50%;
+    width: 100%;
   }
   
   .navbar-links ul {
-    display: flex;
     margin: 0;
     padding: 0;
   }
@@ -38,14 +31,16 @@ body {
     border-style: solid;
     border-color: aliceblue;
     border-radius: 25px;
+    margin-top: 10px;
   }
   
   .navbar-links li a {
     display: block;
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
-    padding: 2.5rem;
+    padding: 1rem;
     font-size: 2.5rem;
+    
   }
   
   .navbar-links li:hover {
@@ -54,7 +49,7 @@ body {
   
   .navbar-links ul {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   .navbar-links ul li {
@@ -66,23 +61,19 @@ body {
     display: flex;
   }
   
-  .navbar-links {
-    height: 100%;
-  }
   
   #slogan {
     font-family: 'Brush Script MT';
-    font-size: 80px;
+    font-size: 40px;
     color: aqua;
-    position: absolute;
-    margin-top: 3em;
+    text-align: center;
   }
 
   /*Index page*/
   
   p {
     margin: 4px;
-    font-size: 400%;
+    font-size: 30px;
     color: aliceblue;
   } 
   
@@ -94,46 +85,44 @@ body {
   } 
   
   .search {
-    width: 70%;
-    height: 100px;
-    border-width: 3px;
-    border-radius: 25px;
-    font-size: 3em;
+    width: 100%;
+    height: 80px;
+    border-width: 1px;
+    border-color: black;
+    font-size: 2em;
     text-align: center;
-    margin-left: 100px;
-    margin-top: -80px;
+    
   }
 
   .searchButton{
-    margin-top: -80px;
-    width: 120px;
-    height: 100px;
-    font-size: 40px;
-    border-radius: 10px;
-    background-color: #FFFF;
+    height: 70px;
+    font-size: 30px;
+    display: block;
+    width: 100%;
+    color: aliceblue;
+    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-width: 3px;
+    border-color: aliceblue;
   }
 
-  .searchButton > a{
-    color: rgb(0, 0, 0);
-  }
   
   #vrapcistePP {
-    margin-top: 10em;
     border-radius: 50px;
+    margin-top: 3em;
+    width: 100%;
+    height: 100%;
   }
   
   .paragraph {
-    color: black;
-    margin-top: 5em;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: justify;
-    font-size: 35px;
-    font-weight: bold;
-    border: 5px solid rgba(0, 0, 0, 0.329);
+    background-color: black;
+    padding: 4%;
+    border-style: double;
     border-radius: 25px;
-    border-style: outset;
+    border-color: rgb(128, 128, 255);
+    font-size: 250%;
+    color: aliceblue;
   }
   
   /* Footer */
@@ -142,8 +131,7 @@ body {
     background-color: #441f1f;
     color: white;
     text-align: center;
-    list-style: none;
-    font-size: 10px;
+    font-size: 1em;
     margin-top: 12em;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -174,7 +162,7 @@ body {
   
   #footerLinks {
     background-image: url(/assets/Black-Brick-Wallpapers.jpg);
-    display: flex;
+    display: block;
     border-radius: 25px;
   }
   
@@ -189,39 +177,34 @@ body {
     font-weight: bold;
   }
   
-  .footer li{
-    list-style:none;
-    padding: 50px;
-    border-style: solid;
-    border-color: aliceblue;
-    border-radius: 25px;
-  }
-  
   .footer li:hover{
     background-color: #555;
   }
   
-  #leftFooterLinks{
-    display: block;
-    width: 50%;
-    font-size: 20px;
-    text-align: left;
+
+  #footerLinks li {
+    list-style: none;
+    padding: 25px;
+    border-style: solid;
     border-color: aliceblue;
+    border-radius: 25px;
+    list-style-position: inside;
+    margin-left: -40px;
+    margin-top: 10px;
   }
   
-  #rightFooterLinks{
-    display: block;
-    width: 50%;
-    font-size: 20px;
-    text-align: left;
-    margin-right: 3%;
-  }
   
   .copyright{
     display: inline-block;
   }
 
 /* News feed*/
+
+.newsFeed > img{
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+}
 
 #newsSection{
   margin-top: 10%;
@@ -233,7 +216,6 @@ body {
 
 .newsFeed {
   display: none;
-  padding: 80px;
   text-align: center;
 }
 
@@ -242,8 +224,6 @@ body {
   position: absolute;
   top: 50%;
   width: auto;
-  height: 10%;
-  margin-top: -30px;
   padding: 16px;
   color: rgb(113, 238, 255);
   font-weight: bold;
@@ -295,6 +275,10 @@ body {
 
 /*Mayor section*/
 
+.emplyeePhotos{
+  width: 300px;
+}
+
 .card {
   margin-top: 5%;
   margin-left: 10%;
@@ -320,22 +304,22 @@ body {
 }
 
 .form{
-  padding: 0em;
   text-align: center;
   line-height: 100px;
 }
 
 .formInside{
-    font-size: 40px;
+    font-size: 100%;
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
     height: 2em;
     border-radius: 25px;
     text-align: center;
+    display: inline-block;
   }
 
   .form>p{
-    font-size: 80px;
+    font-size: 40px;
     text-align: center;
     color: black;
   }
@@ -351,7 +335,7 @@ body {
 }
 
 .south_branch{
-  font-size: 40px;
+  font-size: 25px;
   line-height: 65px;
 }
 
@@ -362,23 +346,21 @@ body {
 }
 
 .north_branch{
-  font-size: 40px;
+  font-size: 25px;
   line-height: 60px;
 }
 
 .map_of_branches p {
   color: black;
   text-align: center;
-  font-size: 45px;
   font-weight: bold;
-  padding: 20px;
+
 }
 
 #map_branches{
   border-style: double;
   border-color: rgb(0, 0, 0);
-  border-width: 10px;
-  width: 98%;
+  width: 100%;
 }
 
 /*newsDetail*/
@@ -388,19 +370,6 @@ body {
   text-decoration: underline;
 }
 
-.detailNewsParagraph{
-    color: black;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: justify;
-    font-size: 35px;
-    font-weight: bold;
-    border: 5px solid rgba(0, 0, 0, 0.075);
-    border-radius: 25px;
-    border-style: outset;
-    background-color: cyan;
-}
 
 .cardDescription{
   color: rgb(0, 0, 0);
@@ -420,7 +389,7 @@ figcaption{
 
 .CardDescriptionName{
   color: rgb(50, 15, 148);
-  font-size: 99px;
+  font-size: 30px;
 }
 
 .newsSpan{
@@ -437,13 +406,13 @@ figcaption{
 
 .searchContainer > a{
   color: rgb(50, 15, 148);;
-  font-size: 90px;
+  font-size: 40px;
 }
 
 .searchContainer > p{
   color: rgb(0, 0, 0);
   margin-left: 25px;
-  font-size: 70px;
+  font-size: 30px;
 }
 
 /*About*/
@@ -475,13 +444,20 @@ figcaption{
   border-style: double;
   border-radius: 25px;
   border-color: rgb(128, 128, 255);
-  font-size: 400%;
+  font-size: 250%;
   color: aliceblue;
 }
 
 .aboutGallery{
-  background-color: #000000;
+  background-image: url(/assets/Black-Brick-Wallpapers.jpg);
   margin-top: 4%;
 }
 
 
+@media only screen and (min-width: 768px){
+  body {
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+  }
+}

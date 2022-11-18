@@ -4,7 +4,7 @@
 <head>
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
 </head>
 
@@ -22,57 +22,15 @@
   </nav>
   <form action="Search.html">
     <input class="search" type="text" placeholder="Search..">
-    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+    <button type="submit" class="searchButton">Press here to search <i class="fa fa-search"></i></button>
   </form>
 
   <div class="aboutGallery">
-    <div class="newsFeed"> 
-         <img  src="/assets/VrCity2.jpg" alt="public transport fees" width="800" height="800" >
-    </div>
-    <div class="newsFeed"> 
-        <img  src="/assets/vrapciste.jpg" alt="public transport fees" width="800" height="800">
-   </div>
-   <div class="newsFeed"> 
-    <img  src="/assets/vrCity3.jpg" alt="public transport fees" width="800" height="800">
-</div>
-    <a class="before" onclick="changeFeed(-1)"> &#60; </a>
-    <a class="after" onclick="changeFeed(1)"> &#62; </a>
-</div>
-<div class="showSlidePage">
-    <span class="slidePage" onclick="feed(1)"></span>
-    <span class="slidePage" onclick="feed(2)"></span>
-    <span class="slidePage" onclick="feed(3)"></span>
+         <img  src="/assets/VrCity2.jpg" alt="public transport fees"  width="100%">
+        <img  src="/assets/vrapciste.jpg" alt="public transport fees" width="100%">
+    <img  src="/assets/vrCity3.jpg" alt="public transport fees" width="100%">
 </div>
 
-<script>
-    var pageNumber = 1;
-    newsFeed(pageNumber);
-    function changeFeed(n) {
-        newsFeed(pageNumber += n);
-    }
-    function feed(n) {
-        newsFeed(pageNumber = n);
-    }
-    function newsFeed(n) {
-        var i;
-        var slides = document.getElementsByClassName("newsFeed");
-        var pages = document.getElementsByClassName("slidePage");
-        if (n > slides.length) {
-            pageNumber = 1
-        }
-        if (n < 1) {
-            pageNumber = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < pages.length; i++) {
-            pages[i].className = pages[i].className.replace(" page", "");
-        }
-        slides[pageNumber - 1].style.display = "block";
-        pages[pageNumber - 1].className += " page";
-    }
-</script>
   
   <article class="AboutArticle">
     <br>
