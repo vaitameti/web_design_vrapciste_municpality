@@ -13,7 +13,7 @@
   /*Navbar*/
   .navbar {
     display: block;
-    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
+    background-image: url(Black-Brick-Wallpapers.jpg);
     color: white;
     height: 100%;
   }
@@ -89,7 +89,7 @@
     display: block;
     width: 100%;
     color: aliceblue;
-    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
+    background-image: url(Black-Brick-Wallpapers.jpg);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-width: 3px;
@@ -141,7 +141,7 @@
     color: lightblue;
   }
   #footerLinks {
-    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
+    background-image: url(Black-Brick-Wallpapers.jpg);
     display: block;
     border-radius: 25px;
   }
@@ -180,7 +180,7 @@
   #newsSection {
     margin-top: 10%;
     position: relative;
-    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
+    background-image: url(Black-Brick-Wallpapers.jpg);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
