@@ -83,6 +83,12 @@
     font-size: 2em;
     text-align: center;
   }
+  .searchForm{
+    width: 98.9%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   .searchButton {
     height: 70px;
     font-size: 30px;
@@ -582,6 +588,7 @@
     .searchForm {
       display: flex;
       margin-top: 2%;
+      width: auto;
     }
     .searchButton {
       width: 50px;
