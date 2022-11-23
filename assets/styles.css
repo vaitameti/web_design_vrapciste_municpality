@@ -415,6 +415,12 @@
       justify-content: space-between;
       height: 19em;
     }
+    .employeeFigure {
+      width: 60%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .contactus>h1{
       padding-top: 90px;
     }
@@ -605,6 +611,12 @@
     #map_branches {
       height: 500px;
       width: 800px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .employeeFigure {
+      width: 60%;
       display: block;
       margin-left: auto;
       margin-right: auto;
