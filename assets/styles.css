@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
   }
-  
+  *,*::after,*::before {
+    margin: 0;
+  }
+  .socialMediaicons > a{
+    color: white;
+    text-decoration: none;
+  }
+
   /*Navbar*/
   .navbar {
     display: block;
@@ -10,22 +17,18 @@
     color: white;
     height: 100%;
   }
-  
   .municipality-title {
     font-size: 3rem;
     font-family: impact;
     text-align: center;
   }
-  
   .navbar-links {
     width: 100%;
   }
-  
   .navbar-links ul {
     margin: 0;
     padding: 0;
   }
-  
   .navbar-links li {
     list-style: none;
     border-style: solid;
@@ -33,7 +36,6 @@
     border-radius: 25px;
     margin-top: 10px;
   }
-  
   .navbar-links li a {
     display: block;
     text-decoration: none;
@@ -41,26 +43,19 @@
     padding: 1rem;
     font-size: 2.5rem;
   }
-  
   .navbar-links li:hover {
     background-color: #555;
   }
-  
   .navbar-links ul {
     width: 100%;
     flex-direction: row;
   }
-  
   .navbar-links ul li {
     text-align: center;
   }
-  
-  
   .navbar-links.page {
     display: flex;
   }
-  
-  
   #slogan {
     font-family: 'Brush Script MT';
     font-size: 40px;
@@ -69,31 +64,26 @@
   }
 
   /*Index page*/
-  
   p {
     margin: 4px;
     font-size: 30px;
     color: aliceblue;
-  } 
-  
+  }
   a {
     text-decoration: underline;
     list-style: none;
     font-size: 2em;
     color: grey;
-  } 
-  
+  }
   .search {
-    width: 100%;
+    width: 98.9%;
     height: 80px;
     border-width: 1px;
     border-color: black;
     font-size: 2em;
     text-align: center;
-    
   }
-
-  .searchButton{
+  .searchButton {
     height: 70px;
     font-size: 30px;
     display: block;
@@ -105,15 +95,12 @@
     border-width: 3px;
     border-color: aliceblue;
   }
-
-  
   #vrapcistePP {
     border-radius: 50px;
     margin-top: 3em;
     width: 100%;
     height: 100%;
   }
-  
   .paragraph {
     background-color: black;
     padding: 4%;
@@ -123,7 +110,7 @@
     font-size: 250%;
     color: aliceblue;
   }
-  
+
   /* Footer */
   .footer {
     width: 100%;
@@ -135,52 +122,41 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
-  
   .socialMediaicons {
     font-size: 45px;
     padding-top: 2em;
     margin-bottom: 2em;
   }
-  
   .socialMediaicons>#instagram,
   #facebook {
     margin-right: 50px;
   }
-  
   .socialMediaicons>#instagram:hover {
     color: orangered;
   }
-  
   .socialMediaicons>#facebook:hover {
     color: blue;
   }
-  
   .socialMediaicons>#twitter:hover {
     color: lightblue;
   }
-  
   #footerLinks {
     background-image: url(/assets/Black-Brick-Wallpapers.jpg);
     display: block;
     border-radius: 25px;
   }
-  
   .list_footer {
     font-size: large;
     text-align: center;
   }
-  
-  .footer li a{
+  .footer li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
   }
-  
-  .footer li:hover{
+  .footer li:hover {
     background-color: #555;
   }
-  
-
   #footerLinks li {
     list-style: none;
     padding: 25px;
@@ -191,134 +167,123 @@
     margin-left: -40px;
     margin-top: 10px;
   }
-  
-  
-  .copyright{
+  .copyright {
     display: inline-block;
   }
 
-/* News feed*/
-
-.newsFeed > img{
-  width: 100%;
-  height: 100%;
-  margin-left: 0px;
-}
-
-#newsSection{
-  margin-top: 10%;
-  position: relative;
-  background-image: url(/assets/Black-Brick-Wallpapers.jpg);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-}
-
-.newsFeed {
-  display: none;
-  text-align: center;
-}
-
-.before, .after {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  color: rgb(113, 238, 255);
-  font-weight: bold;
-  font-size: 80px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(255, 255, 255, 0.164);;
-}
-
-.after {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.before:hover, .after:hover {
-  background-color: rgba(0, 173, 196);
-  color: #441F1F;
-}
-
-.showSlidePage {
+  /* News feed*/
+  .newsFeed>img {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+  }
+  #newsSection {
+    margin-top: 10%;
+    position: relative;
+    background-image: url(/assets/Black-Brick-Wallpapers.jpg);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .newsFeed {
+    display: none;
+    text-align: center;
+  }
+  .before,
+  .after {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: rgb(113, 238, 255);
+    font-weight: bold;
+    font-size: 80px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.164);
+    ;
+  }
+  .after {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .before:hover,
+  .after:hover {
+    background-color: rgba(0, 173, 196);
+    color: #441F1F;
+  }
+  .showSlidePage {
     text-align: center;
     padding: 20px;
     background: rgb(0, 173, 196);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-}
+  }
+  .slidePage {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(219, 221, 219);
+    border-radius: 25px;
+    display: inline-block;
+    transition: background-color 0.3s linear;
+  }
+  .page,
+  .slidePage:hover {
+    background-color: #441F1F;
+  }
+  .newsHeader {
+    color: rgb(113, 238, 255);
+    text-decoration: underline;
+    font-size: 1em;
+  }
 
-.slidePage {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgb(219, 221, 219);
-  border-radius: 25px;
-  display: inline-block;
-  transition: background-color 0.3s linear;
-}
-
-.page, .slidePage:hover {
-  background-color: #441F1F;
-}
-
-.newsHeader {
-  color: rgb(113, 238, 255);
-  text-decoration: underline;
-  font-size: 1em;
-}
-
-/*Mayor section*/
-
-.emplyeePhotos{
-  width: 300px;
-}
-
-.card {
-  margin-top: 5%;
-  margin-left: 10%;
-  margin-bottom: 2%;
-  width: 80%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-style: double;
-  border-color: black;
-  box-shadow: 5px 10px;
-}
-
-.container {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.CardName{
- color: rgb(2, 1, 1);
- font-size: 5em;
- font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.form{
-  text-align: center;
-  line-height: 100px;
-}
-
-.formInside{
+  /*Mayor section*/
+  .emplyeePhotos {
+    width: 300px;
+  }
+  .mayorPhoto {
+    width: 100%;
+    height: 800px;
+  }
+  .card {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-style: double;
+    border-color: black;
+    box-shadow: 5px 10px;
+  }
+  .container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .CardName {
+    color: rgb(2, 1, 1);
+    font-size: 5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .form {
+    text-align: center;
+    line-height: 100px;
+  }
+  .formInside {
     font-size: 100%;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     height: 2em;
     border-radius: 25px;
     text-align: center;
     display: inline-block;
   }
-
-  .form>p{
+  .form>p {
     font-size: 40px;
     text-align: center;
     color: black;
@@ -326,192 +291,402 @@
 
   /*contacts*/
   .contactus>h1 {
-  color: black;
-  font-size: 70px;
-  text-align: center;
-  line-height:80px;
-  font-weight: bold;
-  padding-top: 20px;
-}
-
-.south_branch{
-  font-size: 25px;
-  line-height: 65px;
-}
-
-.contactus ul p {
-  color: rgb(0, 0, 0);
-  font-size: 45px;
-  font-weight: bold;
-}
-
-.north_branch{
-  font-size: 25px;
-  line-height: 60px;
-}
-
-.map_of_branches p {
-  color: black;
-  text-align: center;
-  font-weight: bold;
-
-}
-
-#map_branches{
-  border-style: double;
-  border-color: rgb(0, 0, 0);
-  width: 100%;
-}
-
-/*newsDetail*/
-.detailNewsHeader{
-  text-align: center;
-  margin-top: 5%;
-  text-decoration: underline;
-}
-
-
-.cardDescription{
-  color: rgb(0, 0, 0);
-}
-
-figure{
-  margin-top: 6%;
-  border-style: dashed;
-  border-width: 5px;
-  text-align: center;
-}
-
-figcaption{
-  font-weight: bolder;
-
-}
-
-.CardDescriptionName{
-  color: rgb(50, 15, 148);
-  font-size: 30px;
-}
-
-.newsSpan{
-  color: white; 
-  font-size: 40px;
-}
-
-/*Search container*/
-
-.searchContainer{
-  margin-left: 5%;
-  margin-top: 3%;
-}
-
-.searchContainer > a{
-  color: rgb(50, 15, 148);;
-  font-size: 40px;
-}
-
-.searchContainer > p{
-  color: rgb(0, 0, 0);
-  margin-left: 25px;
-  font-size: 30px;
-}
-
-/*About*/
-
-.AboutArticle{
-  background-color: #441F1F;
-  margin-top: 10%;
-}
-
-.AboutArticle > h2{
-  text-decoration: underline;
-  color: rgb(128, 128, 255);
-}
-
-.articleHeading{
-  color: rgb(128, 128, 255);
-}
-
-
-.AboutParagraph{
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 4%;
-}
-
-.AboutParagraph > p {
-  background-color: black;
-  padding: 4%;
-  border-style: double;
-  border-radius: 25px;
-  border-color: rgb(128, 128, 255);
-  font-size: 250%;
-  color: aliceblue;
-}
-
-.aboutGallery{
-  background-image: url(/assets/Black-Brick-Wallpapers.jpg);
-  margin-top: 4%;
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-
-  .navbar{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 19em;
-  }
-  .navbar-links {
-    width: 50%;
-  }
-  .municipality-title {
-    font-size: 4rem;
-  }
-  #slogan {
-    position: absolute;
-    margin-top: 3em;
-    font-size: 4rem;
-  }
-  .searchForm{
-    display: flex;
-    position: absolute;
-    margin-top: 19em;
-  }
-  .searchButton{
-    height: 80px;
-    width: 50px;
-    border-radius:0%;
-    font-size: 1.5em;
-    display: inline-block;
-  }
-  .search {
-    width: 700px;
-    height: 75px;
-    border-width: 1px;
-    border-color: black;
-    font-size: 2em;
-    text-align: center;
-  }
-  #vrapcistePP {
-    margin-top: 7em;
-  }
-  #footerLinks{
-    display: flex;
-    justify-content: space-between;
-  }
-  #footerLinks > ul{
-    width: 50%;
-  }
-  .form>p{
-    font-size: 50px;
-    text-align: center;
     color: black;
+    font-size: 70px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    padding-top: 20px;
   }
-  figure > img{
-    width: 50%;
+  .south_branch {
+    font-size: 25px;
+    line-height: 65px;
   }
-  .paragraph{
+  .contactus ul p {
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+    font-weight: bold;
+  }
+  .north_branch {
+    font-size: 25px;
+    line-height: 60px;
+  }
+  .map_of_branches p {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+  }
+  #map_branches {
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    width: 100%;
+  }
+
+  /*newsDetail*/
+  .detailNewsHeader {
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: underline;
+  }
+  .cardDescription {
+    color: rgb(0, 0, 0);
+  }
+  .employeeFigure {
+    margin-top: 6%;
+    border-style: dashed;
+    border-width: 5px;
+    text-align: center;
+  }
+  figcaption {
+    font-weight: bolder;
+  }
+  .CardDescriptionName {
+    color: rgb(50, 15, 148);
     font-size: 30px;
   }
-}
+  .newsSpan {
+    color: white;
+    font-size: 40px;
+  }
+
+  /*Search container*/
+  .searchContainer {
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+  .searchContainer>a {
+    color: rgb(50, 15, 148);
+    ;
+    font-size: 40px;
+  }
+  .searchContainer>p {
+    color: rgb(0, 0, 0);
+    margin-left: 25px;
+    font-size: 30px;
+  }
+
+  /*About*/
+  .AboutGallery {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .aboutPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+  }
+  .AboutArticle {
+    background-color: #441F1F;
+    margin-top: 10%;
+  }
+  .AboutArticle>h2 {
+    text-decoration: underline;
+    color: rgb(128, 128, 255);
+  }
+  .articleHeading {
+    color: rgb(128, 128, 255);
+  }
+  .AboutParagraph {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+  }
+  .AboutParagraph>p {
+    background-color: black;
+    padding: 4%;
+    border-style: double;
+    border-radius: 25px;
+    border-color: rgb(128, 128, 255);
+    font-size: 250%;
+    color: aliceblue;
+  }
+  .employeeFigure>figcaption {
+    font-size: 25px;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1228px) {
+    .navbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 19em;
+    }
+    .contactus>h1{
+      padding-top: 90px;
+    }
+    .navbar-links {
+      width: 50%;
+    }
+    .municipality-title {
+      font-size: 4rem;
+    }
+    #slogan {
+      position: absolute;
+      margin-top: 3em;
+      font-size: 4rem;
+    }
+    .searchForm {
+      display: flex;
+      position: absolute;
+      margin-top: 19em;
+      width: 100%;
+    }
+    .searchButton {
+      height: 80px;
+      width: 9%;
+      border-radius: 0%;
+      font-size: 1.5em;
+      display: inline-block;
+    }
+    .search {
+      width: 90%;
+      height: 75px;
+      border-width: 1px;
+      border-color: black;
+      font-size: 2em;
+      text-align: center;
+    }
+    #vrapcistePP {
+      height: 500px;
+      width: 750px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 7em;
+    }
+    #footerLinks {
+      display: flex;
+      justify-content: space-between;
+    }
+    #footerLinks>ul {
+      width: 50%;
+    }
+    .form>p {
+      font-size: 50px;
+      text-align: center;
+      color: black;
+    }
+    .employeeFigure>img {
+      width: 80%;
+    }
+    .employeeFigure {
+      margin-top: 10%;
+    }
+    .paragraph {
+      font-size: 30px;
+    }
+    .mayorPhoto {
+      width: 60%;
+      height: 800px;
+    }
+    .card {
+      margin-top: 13%;
+    }
+    .employeeFigure>figcaption {
+      font-size: 35px;
+    }
+    .AboutGallery {
+      margin-top: 100px;
+      text-align: center;
+    }
+    .socialMediaicons {
+      padding-top: 1em;
+      margin-bottom: 1em;
+    }
+    .galleryAlbum {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 5vw);
+      grid-gap: 1.5rem;
+    }
+    .photo1 {
+      grid-column-start: 1;
+      grid-column-end: span 4;
+      grid-row-start: 1;
+      grid-row-end: 5;
+    }
+    .photo2 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 5;
+    }
+    .photo3 {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 5;
+      grid-row-end: 10;
+    }
+    .photo4 {
+      grid-column-start: 1;
+      grid-column-end: span 4;
+      grid-row-start: 10;
+      grid-row-end: 15;
+    }
+    .photo5 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 10;
+      grid-row-end: 15;
+    }
+    .photo6 {
+      grid-column-start: 1;
+      grid-column-end: 9;
+      grid-row-start: 15;
+      grid-row-end: 20;
+    }
+    .photo7 {
+      grid-column-start: 1;
+      grid-column-end: span 4;
+      grid-row-start: 20;
+      grid-row-end: 25;
+    }
+    .photo8 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 20;
+      grid-row-end: 25;
+    }
+  }
+
+  @media only screen and (min-width: 1229px) {
+    .navbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 11em;
+    }
+    #slogan {
+      position: absolute;
+      margin-top: 2.5em;
+      font-size: 3rem;
+    }
+    .navbar-links {
+      width: 75%;
+      position: absolute;
+      margin-left: 25%;
+    }
+    .navbar-links>ul {
+      display: flex;
+    }
+    .searchForm {
+      display: flex;
+      margin-top: 2%;
+    }
+    .searchButton {
+      width: 50px;
+      height: 50px;
+      border-radius: 0;
+    }
+    .search {
+      width: 80%;
+      height: 50px;
+      font-size: 2em;
+      text-align: center;
+    }
+    #vrapcistePP {
+      height: 400px;
+      width: 590px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #footerLinks {
+      display: flex;
+      justify-content: space-between;
+    }
+    #footerLinks>ul {
+      width: 50%;
+    }
+    #map_branches {
+      height: 500px;
+      width: 800px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .socialMediaicons {
+      padding-top: 1em;
+      margin-bottom: 1em;
+    }
+    .card>img {
+      width: 500px;
+    }
+    .card {
+      width: 40%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .employeeFigure {
+      margin-top: 10%;
+    }
+    .employeeFigure>img {
+      width: 65%;
+    }
+    .employeeFigure>figcaption {
+      font-size: 55px;
+    }
+    .AboutGallery {
+      margin-top: 100px;
+      text-align: center;
+    }
+    .galleryAlbum {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 5vw);
+      grid-gap: 1.5rem;
+    }
+    .photo1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .photo2 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .photo3 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 6;
+    }
+    .photo4 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 6;
+    }
+    .photo5 {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 6;
+      grid-row-end: 10;
+    }
+    .photo6 {
+      grid-column-start: 5;
+      grid-column-end: 9;
+      grid-row-start: 6;
+      grid-row-end: 9;
+    }
+    .photo7 {
+      grid-column-start: 5;
+      grid-column-end: 7;
+      grid-row-start: 9;
+      grid-row-end: 9;
+    }
+    .photo8 {
+      grid-column-start: 7;
+      grid-column-end: 9;
+      grid-row-start: 9;
+      grid-row-end: 9;
+    }
+  }
