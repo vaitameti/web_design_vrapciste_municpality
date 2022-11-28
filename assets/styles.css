@@ -291,6 +291,12 @@
   }
 
   /*contacts*/
+
+  .googleMap{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .contactus>h1 {
     color: black;
     font-size: 70px;
@@ -311,16 +317,6 @@
   .north_branch {
     font-size: 25px;
     line-height: 60px;
-  }
-  .map_of_branches p {
-    color: black;
-    text-align: center;
-    font-weight: bold;
-  }
-  #map_branches {
-    border-style: double;
-    border-color: rgb(0, 0, 0);
-    width: 100%;
   }
 
   /*newsDetail*/
