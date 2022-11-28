@@ -20,27 +20,30 @@
             </ul>
         </div>
         <form class="searchForm" action="Search.html">
-            <input class="search" type="text" placeholder="Search..">
-            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-          </form>
+            <input class="search" type="text" placeholder="Search.." aria-label="search">
+            <button type="submit" class="searchButton" value="button" aria-label="search button"><i
+                    class="fa fa-search"></i></button>
+        </form>
     </nav>
-    
+
 
     <div id="newsSection">
         <div class="newsFeed">
-            <p ><a class="newsHeader" href="news/newsTransport.html">Public transport fee</a></p>
-            <p class="newsSpan" >Click to see full arcticle</p>
-            <a href="news/newsTransport.html"> <img  src="assets/train_logo.png" alt="public transport fees"  ></a>
-        </div>
-        <div class="newsFeed">
-            <p ><a class="newsHeader" href="news/newElections.html">New elections</a></p>
+            <p><a class="newsHeader" href="news/newsTransport.html">Public transport fee</a></p>
             <p class="newsSpan">Click to see full arcticle</p>
-            <a href="news/newElections.html"> <img  src="assets/voteLogo.jpg" alt="elections" width="390" height="380"  ></a>
+            <a href="news/newsTransport.html"> <img src="assets/train_logo.png" alt="public transport fees"></a>
         </div>
         <div class="newsFeed">
-            <p ><a class="newsHeader" href="news/newsPhotoExhibition.html">Photo exhibition</a></p>
-            <p class="newsSpan" >Click to see full arcticle</p>
-            <a href="news/newsPhotoExhibition.html"> <img  src="assets/exhibition.png" alt="exhibition" width="390" height="380"  ></a>
+            <p><a class="newsHeader" href="news/newElections.html">New elections</a></p>
+            <p class="newsSpan">Click to see full arcticle</p>
+            <a href="news/newElections.html"> <img src="assets/voteLogo.jpg" alt="elections" width="390"
+                    height="380"></a>
+        </div>
+        <div class="newsFeed">
+            <p><a class="newsHeader" href="news/newsPhotoExhibition.html">Photo exhibition</a></p>
+            <p class="newsSpan">Click to see full arcticle</p>
+            <a href="news/newsPhotoExhibition.html"> <img src="assets/exhibition.png" alt="exhibition" width="390"
+                    height="380"></a>
         </div>
         <a class="before" onclick="changeFeed(-1)"> &#60; </a>
         <a class="after" onclick="changeFeed(1)"> &#62; </a>
@@ -83,24 +86,27 @@
 
     <footer class="footer">
         <div id="footerLinks">
-            <ul >
+            <ul>
                 <li><a href="Workers/mayor.html">> Mayor</a></li>
                 <li><a href="about.html">> About</a></li>
                 <li><a href="Employees.html">> Employees</a></li>
-              </ul>
-              <ul>
+            </ul>
+            <ul>
                 <li><a href="news.html">> News</a></li>
                 <li><a href="contact.html">> Contact</a></li>
                 <li><a href="complaints.html">> Complaints</a></li>
-              </ul>
+            </ul>
         </div>
         <br>
         <p>Jasin AMETI</p>
         <p>mayor of Vrapciste</p>
         <div class="socialMediaicons">
-            <a href="https://www.facebook.com/" class="fa fa-facebook" id="facebook"></a>
-            <a href="https://www.instagram.com/" class="fa fa-instagram" id="instagram"></a>
-            <a href="https://www.twitter.com/" class="fa fa-twitter" id="twitter"></a>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" id="facebook" aria-hidden="true"
+                aria-label="redirect to facebook page of vrapciste municipality"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" id="instagram" aria-hidden="true"
+                aria-label="redirect to instagram page of vrapciste municipality"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter" id="twitter" aria-hidden="true"
+                aria-label="redirect to twitter page of vrapciste municipality"></a>
         </div>
         <div class="copyright">
             <p>Vrapciste Municipality-2022 © </p>
